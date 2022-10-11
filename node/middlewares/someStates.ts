@@ -1,7 +1,7 @@
-export async function someStates(
-  ctx: StatusChangeContext,
-  next: () => Promise<any>
-) {
-  console.log(ctx.body)
-  await next()
+export const someStates = async (
+  { body }: StatusChangeContext,
+  next: () => Promise<unknown>
+) => {
+  console.log('allStates', body) // eslint-disable-line no-console
+  return next()
 }
