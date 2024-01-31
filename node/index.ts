@@ -8,7 +8,7 @@ import {
 } from '@vtex/api'
 
 import { Clients } from './clients'
-import { allStates } from './middlewares/allStates'
+// import { allStates } from './middlewares/allStates'
 import { someStates } from './middlewares/someStates'
 
 const TIMEOUT_MS = 800
@@ -56,7 +56,7 @@ declare global {
 export default new Service({
   clients,
   events: {
-    allStates,
+    // allStates,
     someStates,
   },
 })
