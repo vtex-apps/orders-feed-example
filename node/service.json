@@ -6,10 +6,6 @@
   "maxReplicas": 4,
   "workers": 1,
   "events": {
-    "allStates": {
-      "sender": "vtex.orders-broadcast",
-      "topics": ["order-status-updated"]
-    },
     "someStates": {
       "sender": "vtex.orders-broadcast",
       "topics": ["cancel", "order-created"]
