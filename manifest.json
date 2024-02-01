@@ -1,7 +1,7 @@
 {
-  "name": "capelli-order-feed",
-  "vendor": "todddesantis",
-  "version": "0.0.0",
+  "name": "orders-feed-example",
+  "vendor": "vtex",
+  "version": "0.2.1",
   "title": "Orders Feed Example",
   "description": "Boilerplate app for receving order status events",
   "categories": [],
@@ -20,13 +20,6 @@
     },
     {
       "name": "colossus-write-logs"
-    },
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "{{account}}.vtexcommercestable.com.br",
-        "path": "*"
-      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

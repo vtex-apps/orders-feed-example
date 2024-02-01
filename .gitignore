@@ -56,5 +56,3 @@ jsconfig.json
 .eslintrc
 
 **/yarn-error.log
-
-.idea/

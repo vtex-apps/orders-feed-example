@@ -1,4 +1,4 @@
-export async function someStates(
+export async function allStates(
   ctx: StatusChangeContext,
   next: () => Promise<any>
 ) {
