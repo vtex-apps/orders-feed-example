@@ -40,6 +40,9 @@ Normally `vtex.orders-broadcast` sends events only in `master` workspace. If you
 3. Change the `Target Workspace` variable to the name of the workspace you have created previously.
 4. Now you can link this app (`vtex.orders-feed-example`) in your desired workspace and receive order status updates.
 
+Additionally, if you are setting up the app in a subaccount, it is important to check the `Notify Subaccounts` option at `https://{accountName}.myvtex.com/admin/apps/vtex.orders-broadcast/setup` even if the feed is not configured for the main account.
+
+
 Here is an example body that you can expect to receive:
 
 ```json
