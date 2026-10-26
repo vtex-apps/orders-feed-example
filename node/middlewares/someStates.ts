@@ -1,7 +1,7 @@
 export async function someStates(
   ctx: StatusChangeContext,
-  next: () => Promise<any>
+  next: () => Promise<unknown>
 ) {
-  console.log(ctx.body)
+  ctx.vtex.logger.info(ctx.body)
   await next()
 }
