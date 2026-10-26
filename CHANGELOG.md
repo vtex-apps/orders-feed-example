@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Replace the node service TSLint script with TypeScript typecheck, matching the ESLint setup at the repository root
+
 ## [0.2.2] - 2024-08-01
 
 ## [0.2.1] - 2021-03-05

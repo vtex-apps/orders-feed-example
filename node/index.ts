@@ -1,4 +1,5 @@
 import {
+  Cached,
   ClientsConfig,
   LRUCache,
   Service,
@@ -15,7 +16,7 @@ const TIMEOUT_MS = 800
 
 // Create a LRU memory cache for the Status client.
 // The @vtex/api HttpClient respects Cache-Control headers and uses the provided cache.
-const memoryCache = new LRUCache<string, any>({ max: 5000 })
+const memoryCache = new LRUCache<string, Cached>({ max: 5000 })
 metrics.trackCache('status', memoryCache)
 
 // This is the configuration for clients available in `ctx.clients`.
@@ -49,7 +50,9 @@ declare global {
     }
   }
   // The shape of our State object found in `ctx.state`. This is used as state bag to communicate between middlewares.
-  interface State extends RecorderState {}
+  interface State extends RecorderState {
+    myCustomProp: Record<string, unknown>
+  }
 }
 
 // Export a service that defines route handlers and client options.

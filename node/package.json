@@ -10,12 +10,10 @@
     "@types/ramda": "types/npm-ramda#dist",
     "@vtex/api": "6.35.0",
     "@vtex/test-tools": "^1.0.0",
-    "tslint": "^5.14.0",
-    "tslint-config-vtex": "^2.1.0",
     "typescript": "3.8.3"
   },
   "scripts": {
-    "lint": "tsc --noEmit --pretty && tslint -c tslint.json --fix './**/*.ts'"
+    "lint": "tsc --noEmit --pretty"
   },
   "version": "0.2.2"
 }
